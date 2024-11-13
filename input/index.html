@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+	<input type="color" onchange="cambio(this.value)">
+	<div class="cuadro" id="divCuadrito"></div>
+
+
+	<input type="text" onkeydown="titulo(this.value)">
+	<h1 id="unico"> </h1>
+
+
+	<select id="" onchange="opcion(this.value)">
+		<option value="opcion1">Opcion1</option>
+		<option value="opcion2">Opcion2</option>
+		<option value="opcion3">Opcion3</option>
+		<option value="opcion4">Opcion4</option>
+		<option value="opcion5">Opcion5</option>
+	</select>
+	<h1 id="ayuda"></h1>
+
+	<hr>
+
+
+
+	<input type="text" id="valorNuevo">
+	<button onclick="alimentar()">Alimentar div</button>
+	<div id="alimentame"></div>
+
+
+
+	<hr>
+
+
+	<input type="text">
+	<input type="password"="">
+	<button onclick="boton()">seguiente</button>
+	<div id="carga"></div>
+
+
+
+	<hr>
+
+	<div class="piano">
+		<div class="tecla blanca" data-key="a" data-note="C"></div>
+		<div class="tecla negra" data-key="w" data-note="C#"></div>
+		<div class="tecla blanca" data-key="s" data-note="D"></div>
+		<div class="tecla negra" data-key="e" data-note="D#"></div>
+		<div class="tecla blanca" data-key="d" data-note="E"></div>
+		<div class="tecla blanca" data-key="f" data-note="F"></div>
+		<div class="tecla negra" data-key="t" data-note="F#"></div>
+		<div class="tecla blanca" data-key="g" data-note="G"></div>
+		<div class="tecla negra" data-key="y" data-note="G#"></div>
+		<div class="tecla blanca" data-key="h" data-note="A"></div>
+		<div class="tecla negra" data-key="u" data-note="A#"></div>
+		<div class="tecla blanca" data-key="j" data-note="B"></div>
+	</div>
+
+
+
+
+
+
+	<script src="index.js"></script>
+</body>
+
+
+
+
+
+
+
+
+</html>

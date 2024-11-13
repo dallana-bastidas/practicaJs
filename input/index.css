@@ -1,0 +1,42 @@
+.cuadro{
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.piano {
+    position: relative;
+    display: flex;
+    border: 2px solid #000;
+    padding: 10px;
+    background-color: #222;
+    width: max-content;
+}
+
+.tecla {
+    width: 60px;
+    height: 200px;
+    margin-right: 5px;
+    border: 1px solid #000;
+}
+
+.tecla.blanca {
+    background-color: white;
+}
+
+.tecla.negra {
+    background-color: black;
+    width: 40px;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
