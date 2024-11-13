@@ -5,7 +5,7 @@
       ins.play();
 
 
-      Ejemplo con el evento onkeypress git  onmouseenter
+      Ejemplo con el evento onkeypress onkeyup onmouseenter
 	onmouseleave onclick
 
 	-un piano por cada evento
@@ -21,8 +21,9 @@ window.onload = () => {
     });
   });
 
-  function playNote(note) {
-    var audio = new Audio("audio/nota1.mp3");
-    audio.play();
+  function playNote(note){
+      var audio = new Audio('audio/nota1.mp3');
+      audio.play()
   }
+
 };
