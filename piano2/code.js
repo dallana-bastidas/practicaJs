@@ -14,19 +14,20 @@
 
 // onclick
 
-// window.onload = () => {
-//   var keys = document.querySelectorAll(".key");
-//   keys.forEach(function (key) {
-//     key.addEventListener("click", function () {
-//       var note = this.getAttribute("data-note");
-//       playNote(note);
-//     });
-//   });
+window.onload = () => {
+  var keys = document.querySelectorAll(".key");
+  keys.forEach(function (key) {
+    key.addEventListener("click", function () {
+      var note = this.getAttribute("data-note");
+      playNote(note);
+    });
+  });
 
-//   function playNote(note){
-//       var audio = new Audio('audio/nota1.mp3');
-//       audio.play()
-//   }
+  function playNote(note) {
+    var audio = new Audio("audio/nota1.mp3");
+    audio.play();
+  }
+};
 
 // onkeyup
 
@@ -52,4 +53,20 @@ document.addEventListener("keyup", (event) => {
     keyElement.classList.add("active");
     setTimeout(() => keyElement.classList.remove("active"), 200);
   }
+});
+
+// OnMouseEnter
+function playSound(note) {
+  const audio = new Audio("audio/nota1.mp3");
+  audio.play();
+}
+
+document.querySelectorAll("#pianoMouseEnterLeave .key").forEach((key) => {
+  key.addEventListener("mouseenter", () => {
+    playSound(key.dataset.note);
+    key.classList.add("active");
+  });
+  key.addEventListener("mouseleave", () => {
+    key.classList.remove("active");
+  });
 });

@@ -1,7 +1,3 @@
-function cargarImagen = (){
-  let input = document.getElementById('inputURL').value
-  let container =document.getElementById('contenedorImg')
+let cart = []
 
-  container.innerHTML =  '<img src = ${input}>'
-
-}
+c

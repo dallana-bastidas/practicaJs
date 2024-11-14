@@ -1,26 +1,93 @@
-<input type="text" id="inputURL">
-<button type="button" onclick="cargarImagen">cargar</button>
-<div id="contenedorImg"> </div>
+<!DOCTYPE html>
+<html lang="en">
 
-cuando yo coloque una url de una imagen en el input y le de click a el boton de
-cargar, la imagen se tiene que mostrar en el contendorImg
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>carrito de compras</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="index.css">
+</head>
 
-<!-- https://www.latinsabor.com/cdn/shop/files/CajaderegalosDulcessurtidosColombianosGGLatinSabor.jpg?v=1713040226
--->
+<body>
+  <header>
+    <a href="#" id="cart-icon">
+      <i class="fa-solid fa-cart-shoppin"> </i> ver carrito (<span id="cart-count">0</span>)
+    </a>
+  </header>
 
-<!-- https://img.freepik.com/vector-gratis/conjunto-elementos-planos-dulces-caramelos_1284-34170.jpg
--->
+  <section class="products container">
+    <div class="card-product">
+      <img src="img/gerberas-1.jpg" alt="">
+      <div class="product-title">
+        <h3> Geberas</h3>
+        <p>$50000</p>
+      </div>
 
-<!-- https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3GEzTFgVIASHMpTD_prpCPIpc-EBrvGEOmA&s
--->
+      <p>Ramo de gerberas blancas con amarrillo </p>
+
+      <div class="product-button">
+        <i class="fa-soid fa-heard"></i>
+        <a href="#" class="add-to-cart">agregar a carrito</a>
+      </div>
 
 
+    </div>
 
-<script src="index.js"> </script>
+    <div class="card-product">
+      <img src="img/gerberas-2.jpg" alt="">
+      <div class="product-title">
+        <h3> Geberas</h3>
+        <p>$60000</p>
+      </div>
+
+      <p>Ramo de gerberas de todos los colores </p>
+
+      <div class="product-button">
+        <i class="fa-soid fa-heard"></i>
+        <a href="#" class="add-to-cart">agregar a carrito</a>
+      </div>
+    </div>
+
+    <div class="card-product">
+      <img src="img/gerberas-3.jpg" alt="">
+      <div class="product-title">
+        <h3> Geberas</h3>
+        <p>$70000</p>
+      </div>
+
+      <p>Ramo de gerberas grande y de todos los colores </p>
+
+      <div class="product-button">
+        <i class="fa-soid fa-heard"></i>
+        <a href="#" class="add-to-cart">agregar a carrito</a>
+      </div>
+    </div>
+
+  </section>
+
+  <div id="cart-modal" class="cart-modal">
+    <div class="cart-content">
+      <span class="close-card">&times;</span>
+      <h2>carrito de compras</h2>
+      <ul id="card-items"></ul>
+      <p id="total">Total:$0</p>
+      <button id="checkout">Finalizar compra</button>
+    </div>
+  </div>
+
+  <div id="purchase-modal" class="purchase-modal">
+    <div class="purchase-content">
+      <h2> Compra finalizada</h2>
+      <p>gracias por tu compra</p>
+      <button id="close=purchase"> Cerra</button>
+    </div>
+  </div>
 
 
-tengo que capturar la url de la imagen en el boton y se que muestre en el div
+  <script src="index.js"></script>
+</body>
 
-
-Tener una lista de elementos cuando yo le de click a alguna opcion  me aparezca
-un texto que diga le dio click a el nombre del elemento
+</html>
