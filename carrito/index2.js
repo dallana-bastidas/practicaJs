@@ -23,3 +23,5 @@ function verTotal() {
   });
   total.innerHTML = suma;
 }
+
+
