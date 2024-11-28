@@ -49,7 +49,8 @@ document.addEventListener("keyup", (event) => {
   const note = keyMap[event.key];
   if (note) {
     playSound(note);
-    const keyElement = document.querySelector('#pianoKeyUp .key[data-note="${note}"]');
+    const x = document.querySelector('#pianoKeyUp .key[data-note="${note}"]');
+    console.log("🚀 ~ document.addEventListener ~ keyElement:", keyElement);
     keyElement.classList.add("active");
     setTimeout(() => keyElement.classList.remove("active"), 200);
   }
@@ -70,3 +71,9 @@ document.querySelectorAll("#pianoMouseEnterLeave .key").forEach((key) => {
     key.classList.remove("active");
   });
 });
+
+function tocarNota() {
+  const audio = new Audio("audio/nota1.mp3");
+  audio.play();
+
+}
