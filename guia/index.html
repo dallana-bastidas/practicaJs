@@ -5,53 +5,83 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ejercicios logica</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/css/splide.min.css">
+  <link rel="stylesheet" href="index.css">
 </head>
 
+<body>
+  <h1> Encuesta </h1>
+  <form id="encuesta" class="splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <!-- pregunta 1 -->
+          <label for="name"> Nombre:</label>
+          <input type="text" id="name">
+        </li>
+
+        <li class="splide__slide">
+          <!-- pregunta 2 -->
+          <label>Genero</label>
+          <input type="radio" id="male" value="masculino" name="gender">
+          <label for="male">Masculino</label>
+          <input type="radio" id="female" value="femenino" name="gender">
+          <label for="genero2"> Femenino</label> <br> <br>
+        </li>
+
+        <li class="splide__slide">
+          <!-- pregunta 3 -->
+          <label for="ageGroup"> Rango de edad </label>
+          <select name="ageGroup" id="ageGroup">
+            <option value="18-25">18-25</option>
+            <option value="26-35">26-35</option>
+            <option value="36-45">36-45</option>
+            <option value="46+">46+</option>
+          </select>
+        </li>
+
+        <li class="splide__slide">
+          <!-- pregunta 4 -->
+          <label for="comments">Deja tu comentario</label><br>
+          <textarea name="comments" id="comments"></textarea>
+        </li>
+
+        <li class="splide__slide">
+          <!-- pregunta 5 -->
+          <label>¿Que te de interesa?</label><br>
+          <input type="checkbox" id="sports" value="deportes" name="interests">
+          <label for="sports">Deportes</label><br>
+          <input type="checkbox" id="music" value="musica" name="interests">
+          <label for="music">Musica</label>
+          <input type="checkbox" id="movies" value="cine" name="interests">
+          <label for="movies">Cine</label> <br> <br>
+        </li>
+
+        <li class="splide__slide">
+          <!-- pregunta 6 -->
+          <label for="date"> ¿en que fecha respondes esto?</label>
+          <input type="date" id="date" name="date">
+
+        </li>
+
+        <li class="splide__slide">
+          <button type="submit"> enviar</button>
+
+        </li>
+
+      </ul>
+    </div>
+
+  </form>
+
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/js/splide.min.js"></script>
+  <script src="index.js"></script>
+</body>
 
 </html>
 
 
-<body>
-  <h1> Encuesta </h1>
-  <form id="encuesta">
-    <!-- pregunta 1 -->
-    <label for="name"> Nombre:</label>
-    <input type="text" id="name"> <br><br>
-    <!-- pregunta 2 -->
-    <label>Genero</label>
-    <input type="radio" id="male" value="masculino" name="gender">
-    <label for="male">Masculino</label>
-    <input type="radio" id="female" value="femenino" name="gender">
-    <label for="genero2"> Femenino</label> <br> <br>
-    <!-- pregunta 3 -->
-    <label for="ageGroup"> Rango de edad </label>
-    <select name="ageGroup" id="ageGroup">
-      <option value="18-25">18-25</option>
-      <option value="26-35">26-35</option>
-      <option value="36-45">36-45</option>
-      <option value="46+">46+</option>
-    </select> <br><br>
-    <!-- pregunta 4 -->
-    <label for="comments">Deja tu comentario</label><br>
-    <textarea name="comments" id="comments"></textarea> <br><br>
-    <!-- pregunta 5 -->
-    <label>¿Que te de interesa?</label><br>
-    <input type="checkbox" id="sports" value="deportes" name="interests">
-    <label for="sports">Deportes</label><br>
-    <input type="checkbox" id="music" value="musica" name="interests">
-    <label for="music">Musica</label>
-    <input type="checkbox" id="movies" value="cine" name="interests">
-    <label for="movies">Cine</label> <br> <br>
-    <!-- pregunta 6 -->
-    <label for="date"> ¿en que fecha respondes esto?</label>
-    <input type="date" id="date" name="date"> <br><br>
 
-    <button type="submit"> enviar</button>
-  </form>
-
-  <script src="index.js"></script>
-
-</body>
 
 
 

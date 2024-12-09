@@ -1,4 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // carrusel
+  new Splide("#encuesta", {
+    type: "slide", // Tipo de carrusel
+    perPage: 1, // Mostrar una diapositiva a la vez
+    perMove: 1, // Mover una diapositiva por vez
+    pagination: true, // Mostrar paginación
+    arrows: true, // Mostrar flechas de navegación
+  }).mount(); // Montar el carrusel
+
   const form = document.getElementById("encuesta");
 
   const formDataArray = [];

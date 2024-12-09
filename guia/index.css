@@ -1,0 +1,99 @@
+body{
+  background-color: #f9f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  text-align: center;
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+.splide{
+  max-width: 800px;
+  margin: 20px auto;
+  background: #fff
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: :hidden;
+}
+
+.splide__slide{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.splide__slide label{
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  display: block;
+  color: #333;
+}
+
+.splide__slide input[type= "text"],
+.splide__slide select,
+.splide__slide textarea,
+.splide__slide input[type="date"]{
+  width: 80%;
+  padding: 10px;
+  font-size: 1rem;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.splide__slide button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.splide__slide button:hover{
+  background-color: #45a100;
+}
+
+
+.splide__pagination__page{
+  background: #ccc;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px ;
+  cursor: pointer;
+}
+
+.splide__pagination__page.is-active{
+  background: #4caf50
+}
+
+
+
+
+/* .splide_arrow{
+  background: none;
+  border: 2px solid #333;
+  color: #333;
+  background-color: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2 ease, color: ease;
+}
+
+.splide_arrow:hover{
+  background:#333 ;
+  color: red;
+} */
